@@ -10,7 +10,7 @@
 body {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 640px;
+    font-weight: 600;
     font-style: normal;
     line-height: 1.6;
     letter-spacing: 1.6px;
@@ -70,6 +70,9 @@ h2 {
     width: 100%; /* Fazendo a barra de navegação ocupar toda a parte de cima da tela */
     max-height: 64px; /* Limitando a altura da barra de navegação para evitar que ela fique muito alta */
     position: fixed; /* Deixando a barra fixa*/
+    top: 0; /* Garante que fixe perfeitamente no topo */
+    left: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
 /* Container do menu principal */
@@ -112,7 +115,7 @@ h2 {
 .menu a {
     color: #ecf0f1;
     text-decoration: none;
-    font-weight: 800px;
+    font-weight: 800;
     transition: color 0.3s ease;
 }
 
