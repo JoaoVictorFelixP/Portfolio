@@ -92,49 +92,52 @@
     }
     
     .Conhecimentos {
-        width: 100px;
-        height: 100px;
-        min-width: 80px;
-        max-width: 1600px;
-        min-width: 80px;
-        max-height: 416px;
-        min-height: 320px;
-        padding: 66px 32px;
-        padding-bottom: 0;
-        padding-top: 16px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        min-height: 0;
+        padding: 32px 24px;
         margin: 0;
-        display: flex;
-        flex-direction: row; /* Mantém os conteúdos lado a lado*/
-        align-items: center;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
     }
 
-        .HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img {
-        width: 100px;
-        height: 100px;
-        padding-right: 0px;
-        padding-left: 0px;
-        display: flex;
-        flex-direction: row;
-    }
-    .HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a {
-        width: 100px;
-        height: 100px;
-        padding-right: 0px;
-        padding-left: 0px;
-        display: flex;
-    }
-    .HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2 {
-        margin-top: 32px;
-        font-size: 20px;
-        margin-bottom: 32px;
-        padding-right: 0px;
-        padding-left: 0px;
+    .HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel,
+    .Python_BoxModel, .Java_BoxModel, .PHP_BoxModel, .MySQL_BoxModel {
         width: 100%;
-        height: auto;
+        min-width: 0;
+        min-height: 240px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img,
+    .Python_BoxModel img, .Java_BoxModel img, .PHP_BoxModel img, .MySQL_BoxModel img,
+    .HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a,
+    .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a, .MySQL_BoxModel a {
+        width: 88px;
+        height: 88px;
+    }
+
+    .HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a,
+    .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a, .MySQL_BoxModel a {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        align-items: center;
+    }
+
+    .HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2,
+    .Python_BoxModel h2, .Java_BoxModel h2, .PHP_BoxModel h2, .MySQL_BoxModel h2 {
+        margin: 16px 0 0;
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 
         #Carreira {
@@ -206,6 +209,11 @@
 
 }
 
+/* 
+=========================
+MOBILE 
+======================== 
+*/
 @media (max-width: 700px) {
     *, body {
         margin: 0;
@@ -343,7 +351,8 @@
         margin: 0;
     }
 
-    .HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel, .Python_BoxModel {
+    .HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel,
+    .Python_BoxModel, .Java_BoxModel, .PHP_BoxModel, .MySQL_BoxModel {
         width: 100%; 
         height: auto; 
         padding: 16px;
@@ -356,13 +365,16 @@
         border-radius: 16px;
     }
 
-    .HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a,
-    .HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img {
+    .HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a,
+    .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a, .MySQL_BoxModel a,
+    .HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img,
+    .Python_BoxModel img, .Java_BoxModel img, .PHP_BoxModel img, .MySQL_BoxModel img {
         width: 50px;
         height: 50px;
     }
 
-    .HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2 {
+    .HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2,
+    .Python_BoxModel h2, .Java_BoxModel h2, .PHP_BoxModel h2, .MySQL_BoxModel h2 {
         margin-top: 12px;
         margin-bottom: 0;
         font-size: 14px;
