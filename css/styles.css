@@ -222,7 +222,7 @@ h2 {
     gap: 16px;
 }
 
-.HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel, .Python_BoxModel, .Java_BoxModel, .PHP_BoxModel {
+.HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel, .Python_BoxModel, .Java_BoxModel, .PHP_BoxModel, .MySQL_BoxModel {
     width: 100%;
     min-height: 320px;
     border-radius: 32px;
@@ -234,21 +234,21 @@ h2 {
     color: #E9E3E6;
 }
 
-.HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img, .Java_BoxModel img, .PHP_BoxModel img {
+.HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img, .Java_BoxModel img, .PHP_BoxModel img, .MySQL_BoxModel img {
     width: 128px;
     height: 128px;
     object-fit: cover;
     display: flex;
     border-radius: 24px;
 }
-.HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a {
+.HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a, .MySQL_BoxModel a {
     width: 128px;
     height: 128px;
     object-fit: cover;
     display: flex;
     border-radius: 24px;
 }
-.HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2, .Java_BoxModel h2, .PHP_BoxModel h2 {
+.HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2, .Java_BoxModel h2, .PHP_BoxModel h2, .MySQL_BoxModel h2 {
     margin-top: 32px;
     font-size: 32px;
     margin-bottom: 32px;
@@ -323,7 +323,7 @@ h2 {
 
 /* Filtro aplicado diretamente na imagem interna ao passar o mouse no link */
 .Botao_Linkedin:hover img, .Botao_GitHub:hover img, .HTML_BoxModel:hover img, 
-.CSS_BoxModel:hover img, .Js_BoxModel:hover img, .C_BoxModel:hover img, .Python_BoxModel:hover img, .Java_BoxModel:hover img, .PHP_BoxModel:hover img {
+.CSS_BoxModel:hover img, .Js_BoxModel:hover img, .C_BoxModel:hover img, .Python_BoxModel:hover img, .Java_BoxModel:hover img, .PHP_BoxModel:hover img, .MySQL_BoxModel:hover img {
     /* Este filtro transforma uma imagem escura/branca em um tom de roxo (#451D6D), sendo feito junto do CSS Filter Generator */
     filter: brightness(0) saturate(100%) invert(12%) sepia(36%) saturate(4775%) hue-rotate(258deg) brightness(200%) contrast(96%);
 }
