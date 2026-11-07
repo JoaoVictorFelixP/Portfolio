@@ -40,7 +40,7 @@ h2 {
     max-width: 99.8%;
 }
 
-/* Container de conteúdo vertical  (tive ideia vendo um site da Paschoalotto)*/
+/* Container de conteúdo vertical */
 .pagina {
     width: 100%;
     display: flex;
@@ -208,50 +208,44 @@ h2 {
 
 /*Section dos conhecimentos que possuo e as caixas dos mesmos*/
 .Conhecimentos {
-    padding: 66px 32px;
-    padding-bottom: 0;
-    padding-top: 16px;
+    padding: 16px 32px 32px;
     width: 100%;
     max-width: 1600px;
-    min-width: 480px;
-    height: 432px;
-    max-height: 416px;
-    min-height: 320px;
+    height: auto;
     margin: 0;
-    display: flex;
-    flex-direction: row; /* Mantém os conteúdos lado a lado*/
-    align-items: center;
-    flex-wrap: nowrap;
+    display: grid;
+    /* Cria quatro colunas iguais, permitindo que cada uma encolha até zero. */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
 }
 
-.HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel, .Python_BoxModel {
-    width: 240px;
-    height: 320px;
+.HTML_BoxModel, .CSS_BoxModel, .Js_BoxModel, .C_BoxModel, .Python_BoxModel, .Java_BoxModel, .PHP_BoxModel {
+    width: 100%;
+    min-height: 320px;
     border-radius: 32px;
-    padding: 32px;
-    padding-top: 3.2px;
-    margin: 0 8px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #E9E3E6;
 }
-.HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img {
+
+.HTML_BoxModel img, .CSS_BoxModel img, .Js_BoxModel img, .C_BoxModel img, .Python_BoxModel img, .Java_BoxModel img, .PHP_BoxModel img {
     width: 128px;
     height: 128px;
     object-fit: cover;
     display: flex;
     border-radius: 24px;
 }
-.HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a {
+.HTML_BoxModel a, .CSS_BoxModel a, .Js_BoxModel a, .C_BoxModel a, .Python_BoxModel a, .Java_BoxModel a, .PHP_BoxModel a {
     width: 128px;
     height: 128px;
     object-fit: cover;
     display: flex;
     border-radius: 24px;
 }
-.HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2 {
+.HTML_BoxModel h2, .CSS_BoxModel h2, .Js_BoxModel h2, .C_BoxModel h2, .Python_BoxModel h2, .Java_BoxModel h2, .PHP_BoxModel h2 {
     margin-top: 32px;
     font-size: 32px;
     margin-bottom: 32px;
@@ -326,7 +320,7 @@ h2 {
 
 /* Filtro aplicado diretamente na imagem interna ao passar o mouse no link */
 .Botao_Linkedin:hover img, .Botao_GitHub:hover img, .HTML_BoxModel:hover img, 
-.CSS_BoxModel:hover img, .Js_BoxModel:hover img, .C_BoxModel:hover img, .Python_BoxModel:hover img {
+.CSS_BoxModel:hover img, .Js_BoxModel:hover img, .C_BoxModel:hover img, .Python_BoxModel:hover img, .Java_BoxModel:hover img, .PHP_BoxModel:hover img {
     /* Este filtro transforma uma imagem escura/branca em um tom de roxo (#451D6D), sendo feito junto do CSS Filter Generator */
     filter: brightness(0) saturate(100%) invert(12%) sepia(36%) saturate(4775%) hue-rotate(258deg) brightness(200%) contrast(96%);
 }
